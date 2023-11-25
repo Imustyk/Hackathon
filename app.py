@@ -12,7 +12,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 CORS(app)
 # Set your OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'KEY'
 
 
 # Function to generate an article using OpenAI GPT-3
@@ -30,7 +30,7 @@ def page_not_found(e):
 
 
 app = Flask(__name__)
-app.secret_key = 'xyzsdfg'
+app.secret_key = 'KEY'
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
