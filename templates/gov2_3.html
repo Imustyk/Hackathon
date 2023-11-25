@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oculus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        .logo {
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 20px; 
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px; 
+        }
+
+       main {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20%
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .result-container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .nav{
+  font-size:14px;
+  margin-right: 20px;
+  text-transform:uppercase;
+}
+.logo{
+  font-size:45px;
+  font-weight:700;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.img{
+padding: 0px;
+margin: 0;
+}
+.nav__link{
+  display: inline-block;
+  vertical-align:top;
+  margin: 0 10px;
+  color:#fff;
+  text-decoration:none;
+  transition: color .2s linear;
+position:relative;
+font-size: 20px;
+}
+.nav__link1{
+  color:#fff;
+  text-decoration:none;
+  transition: color .2s linear;
+position:relative;
+font-size: 15px;
+}
+.nav__link:after{
+  content:"";
+  display:block;
+  width:100%;
+  height:3px;
+  background-color:#fce38a;
+  opacity:0;
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:1;
+  transition:opacity .1s linear;
+}
+.nav__link1:after{
+  content:"";
+  display:block;
+  width:100%;
+  height:3px;
+  background-color:#fce38a;
+  opacity:0;
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:1;
+  transition:opacity .1s linear;
+}
+.nav__link:hover {
+  color: #fce38a;
+}
+.nav__link1:hover {
+  color: #fce38a;
+}
+.nav__link:hover:after,
+.nav__link.active:after
+{
+  
+  opacity:1;
+}
+.nav__link.active{
+  color:#F1BE07;
+}
+.nav__link1:hover:after,
+.nav__link1.active:after
+{
+  
+  opacity:1;
+}
+.nav__link1.active{
+  color:#F1BE07;
+}
+ .bottom-bar {
+            background-color: ##636161;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .bottom-bar img {
+            max-width: 70px;
+            height: auto;
+            margin-left: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top:10%;
+            padding :10px
+            left: 20%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img class ="img" src="https://cdn.icon-icons.com/icons2/567/PNG/512/eye_icon-icons.com_54399.png" width="35px" height="35px"  alt="zdg">culus </div>
+       <nav class="nav">
+           <a class="nav__link " href="/gov2_1">Arestări</a>
+            <a class="nav__link " href="/gov2_2">Persoane dispărute</a>
+            <a class="nav__link active" href="/gov3_3">20 de ani zkg</a>
+            <a class="nav__link1 " href="/gov3">Ru</a>
+            <a class="nav__link1 active" href="/gov3_3">Ro</a>
+            <a class="nav__link1" href="/gov3_3">En</a>
+        </nav>
+    </header>
+<div class="bottom-bar">
+        <img src="https://www.zdg.md/en/wp-content/themes/zdg/assets/images/logo.png" alt="zdg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_politie.svg/1280px-Logo_politie.svg.png" alt="politie">
+    </div>
+     <script class="container" src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-b90108e9-cb9d-4730-850a-f2a805a2ad47" data-elfsight-app-lazy></div>
+</body>
+</html>
